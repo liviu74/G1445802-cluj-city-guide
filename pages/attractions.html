@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cluj-Napoca City Guide - Attractions</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cluj City Guide</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html" class="active">Attractions</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Cluj-Napoca Attractions</h2>
+    <br>
+
+    <div class="filter-box">
+      <input type="text" id="search-input" placeholder="Search attractions by name...">
+      <select id="category-select">
+        <option value="All">All Categories</option>
+        <option value="Landmark">Landmark</option>
+        <option value="Park">Park</option>
+        <option value="Museum">Museum</option>
+        <option value="Culture">Culture</option>
+      </select>
+    </div>
+
+    <div class="cards-container" id="attractions-list"></div>
+  </main>
+
+  <div class="modal" id="details-modal">
+    <div class="modal-box">
+      <h3 id="modal-title">Attraction Name</h3>
+      <p id="modal-category" class="location-text"></p>
+      <img id="modal-img" src="" alt="Attraction photo">
+      <p id="modal-desc"></p>
+      <br>
+      <button class="btn" id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Cluj-Napoca City Guide | Student ID: G1445802</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
