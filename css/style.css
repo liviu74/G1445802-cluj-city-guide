@@ -27,7 +27,9 @@ header h1 {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
 nav a {
@@ -36,6 +38,7 @@ nav a {
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 4px;
+  display: inline-block;
 }
 
 nav a:hover,
@@ -132,6 +135,9 @@ main {
 
 .card-info {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .category-tag {
@@ -141,6 +147,7 @@ main {
   border-radius: 12px;
   font-size: 12px;
   font-weight: bold;
+  align-self: flex-start;
 }
 
 .card-info h3 {
@@ -155,7 +162,8 @@ main {
 }
 
 .card-buttons {
-  margin-top: 15px;
+  margin-top: auto;
+  padding-top: 15px;
   display: flex;
   gap: 10px;
 }
